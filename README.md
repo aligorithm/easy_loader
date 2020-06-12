@@ -1,4 +1,4 @@
-# easy_loader
+# EasyLoader
 
 The easiest way to handle a simple full screen loader in Flutter. Written in Dart. Fully customizable.
 
