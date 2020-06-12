@@ -9,7 +9,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  easy_loader: ^0.0.1
+  easy_loader: ^1.0.1
 ```
 
 ## Usage
