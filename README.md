@@ -1,6 +1,6 @@
 # easy_loader
 
-The easiest way to handle a simple full screen loader in Flutter. Written in Dart. 
+The easiest way to handle a simple full screen loader in Flutter. Written in Dart. Fully customizable.
 
 ![Screenshot](https://raw.githubusercontent.com/aligorithm/assets/master/ezgif-3-faf66acba323.gif)
 ## Getting Started

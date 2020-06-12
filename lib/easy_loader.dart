@@ -7,7 +7,7 @@ class EasyLoader extends StatefulWidget {
       {Key key,
       this.backgroundColor,
       this.animation,
-      this.image,
+      @required this.image,
       this.iconSize = 120.0,
       this.iconColor = Colors.black})
       : super(key: key);
@@ -16,7 +16,7 @@ class EasyLoader extends StatefulWidget {
   final Color backgroundColor;
   //// Changes the default animation
   final Animation<Offset> animation;
-  //// Changes the default image. For example, an AssetImage
+  //// Sets the image for the icon
   final ImageProvider image;
   //// Changes the size of the default icon image
   final double iconSize;
@@ -49,7 +49,7 @@ class _EasyLoaderState extends State<EasyLoader>
           curve: Curves.ease,
         ));
     _backgroundColor = widget.backgroundColor ?? Colors.black;
-    _image = widget.image ?? AssetImage('assets/loading.png');
+    _image = widget.image;
     _iconSize = widget.iconSize;
     super.initState();
   }

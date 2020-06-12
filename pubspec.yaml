@@ -1,8 +1,8 @@
 name: easy_loader
-description: The easiest way to handle a simple full screen loader in Flutter. Written in Dart. 
-version: 0.0.1
+description: The easiest way to handle a simple full screen loader in Flutter. Written in Dart. Fully customizable.
+version: 1.0.0
 # author: Aliyu Yisa
-homepage: https://aligorithm.i.ng
+homepage: https://github.com/aligorithm/easy_loader
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -22,8 +22,7 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  assets:
-    - assets/
+  # assets:
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see

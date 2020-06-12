@@ -45,11 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
       //// Wrap your body in a stack
       body: Stack(
         children: <Widget>[
-          Container(
+          Center(
             child: Text("Lorem Ipsum"),
           ),
           //// Put the loader widget at the end of the stack. You can set it to appear based on a boolean. E.g. a loading flag.
-          EasyLoader()
+          EasyLoader(image: AssetImage('assets/loading.png'),)
         ],
       ),
     );
