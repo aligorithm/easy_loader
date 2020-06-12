@@ -2,13 +2,18 @@
 
 The easiest way to handle a simple full screen loader in Flutter. Written in Dart. 
 
+![Screenshot](https://raw.githubusercontent.com/aligorithm/assets/master/ezgif-3-faf66acba323.gif)
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+Add this to your package's `pubspec.yaml` file
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+dependencies:
+  easy_loader: ^0.0.1
+```
+
+## Usage
+
+Next, you just have to import the package using:
+
+`import 'package:easy_loader/easy_loader.dart';`
