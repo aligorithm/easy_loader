@@ -3,11 +3,18 @@ library easy_loader;
 import 'package:flutter/material.dart';
 
 class EasyLoader extends StatefulWidget {
-  const EasyLoader({Key key, this.backgroundColor, this.animation, this.image, this.iconSize}) : super(key: key);
+  const EasyLoader({Key key, this.backgroundColor, this.animation, this.image, this.iconSize = 120.0, this.iconColor = Colors.black}) : super(key: key);
+
+  //// The background color of the loader. It is automatically transparent.
   final Color backgroundColor;
+  //// Changes the default animation
   final Animation<Offset> animation;
+  //// Changes the default image. For example, an AssetImage
   final ImageProvider image;
+  //// Changes the size of the default icon image
   final double iconSize;
+  //// Changes the color of the icon
+  final Color iconColor;
 
   @override
   _EasyLoaderState createState() => _EasyLoaderState();
@@ -34,7 +41,7 @@ class _EasyLoaderState extends State<EasyLoader> with SingleTickerProviderStateM
     ));
     _backgroundColor = widget.backgroundColor ?? Colors.black;
     _image = widget.image ?? AssetImage('assets/loading.png');
-    _iconSize = widget.iconSize ?? 120.0;
+    _iconSize = widget.iconSize;
     super.initState();
   }
 

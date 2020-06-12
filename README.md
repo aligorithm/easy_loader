@@ -1,6 +1,6 @@
 # easy_loader
 
-A loading progress package with an easy to integrate loader widget for Flutter.
+The easiest way to handle a simple full screen loader in Flutter. Written in Dart. 
 
 ## Getting Started
 

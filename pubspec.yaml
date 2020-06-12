@@ -1,7 +1,7 @@
 name: easy_loader
-description: An easy to integrate loader widget for Flutter
+description: The easiest way to handle a simple full screen loader in Flutter. Written in Dart. 
 version: 0.0.1
-author: Aliyu Yisa
+# author: Aliyu Yisa
 homepage: https://aligorithm.i.ng
 
 environment:
