@@ -1,16 +1,42 @@
-# example
+# EasyLoader
 
-A new Flutter project.
+The easiest way to handle a simple full screen loader in Flutter. Written in Dart. Fully customizable.
 
+![Screenshot](https://raw.githubusercontent.com/aligorithm/assets/master/ezgif-3-faf66acba323.gif)
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Add this to your package's `pubspec.yaml` file
 
-A few resources to get you started if this is your first Flutter project:
+```yaml
+dependencies:
+  easy_loader: ^0.0.1
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Next, you just have to import the package using:
+
+```dart
+import 'package:easy_loader/easy_loader.dart';
+```
+
+Then wrap your body within a `Stack` and place the `EasyLoader()` widget at the end of the `Stack`
+
+```dart
+  Widget build(BuildContext context) {
+    return Scaffold(
+      //// Wrap your body in a stack
+      body: Stack(
+        children: <Widget>[
+          Center(
+            child: Text("Lorem Ipsum"),
+          ),
+          //// Put the loader widget at the end of the stack. You can set it to appear based on a boolean. E.g. a loading flag.
+          EasyLoader(image: AssetImage('assets/loading.png'),)
+        ],
+      ),
+    );
+  }
+```
+
+All done! You can customize other things like the icon size, background color, icon color and the animation by passing the values into the constructor.
