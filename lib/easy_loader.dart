@@ -50,7 +50,7 @@ class _EasyLoaderState extends State<EasyLoader>
           curve: Curves.ease,
         ));
     _backgroundColor = widget.backgroundColor ?? Colors.black;
-    _iconColor = widget.iconColor ?? Colors.black;
+    _iconColor = widget.iconColor;
     _image = widget.image;
     _iconSize = widget.iconSize;
     super.initState();
