@@ -49,7 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text("Lorem Ipsum"),
           ),
           //// Put the loader widget at the end of the stack. You can set it to appear based on a boolean. E.g. a loading flag.
-          EasyLoader(image: AssetImage('assets/loading.png'),)
+          EasyLoader(
+            image: AssetImage(
+              'assets/loading.png',
+            ),
+            iconColor: Colors.white,
+          )
         ],
       ),
     );
