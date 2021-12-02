@@ -32,6 +32,7 @@ class _EasyLoaderState extends State<EasyLoader>
   AnimationController _controller;
   Animation<Offset> _offsetAnimation;
   Color _backgroundColor = Colors.black;
+  Color _iconColor;
   ImageProvider _image;
   double _iconSize;
   @override
@@ -49,6 +50,7 @@ class _EasyLoaderState extends State<EasyLoader>
           curve: Curves.ease,
         ));
     _backgroundColor = widget.backgroundColor ?? Colors.black;
+    _iconColor = widget.iconColor ?? Colors.black;
     _image = widget.image;
     _iconSize = widget.iconSize;
     super.initState();
@@ -67,6 +69,7 @@ class _EasyLoaderState extends State<EasyLoader>
           child: ImageIcon(
             _image,
             size: _iconSize,
+            color: _iconColor,
           ),
         ))
       ],
